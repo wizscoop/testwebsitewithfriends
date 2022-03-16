@@ -9,7 +9,17 @@
 <body>
     <h1>Yo dit is een hacker genaamd anonymous </h1>    
     <button class="button button1">Green</button>
-    <button class="button button2">Blue</button>
+    <button id="myBtn" class="button button2">Blue</button>
+
+    <script>
+        const myBtn = document.getElementById("myBtn");
+
+        myBtn.addEventListener("click", function(e) {
+            const name = prompt("What is your name?");
+
+            document.body.innerHTML = "<h2>Welcome, " + name + "!</h2>";
+        });
+    </script>
 </body>
     <h1 style="color:mediumseagreen; font-family: Cursive;">Dit is de beste website van de wereld</h1>
 <text>
